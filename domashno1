@@ -1,0 +1,59 @@
+import java.util.Scanner;
+public class Domashno1 {
+    public static void main(String[] args) {
+        int check = 4;
+        int endTask = 1;
+        while (check==4) {
+            int operation;
+            Scanner input = new Scanner(System.in);
+                short chislo11 = -250;
+                short chislo12 = 250;
+                int chislo13 = 4589498;
+                String chislo14 = "10 000 000 000 000 000 000";
+                String chislo15 = "-9 000 000 000 000 000 000";
+                    int chislo21 = 43112;
+                    int chislo22 = -1357674;
+                    int chislo23 = 1357674;
+                    int chislo24 = -1357674000;
+                    String chislo25 = "3 657 895 000";
+                        double chislo31 = 4.9876543;
+                        String chislo32 = "7.123456789012345678890";
+                        String chislo33 = "18 398 458 438 583 853.28";
+                        String chislo34 = "18 398 458 438 583.39875937284928422";
+            System.out.println("Izberete ot 1-3, za da vidite promenlivite!:");
+            System.out.println("1. -250, 250, 4 589 498, 10 000 000 000 000 000 000, - 9 000 000 000 000 000 000");
+            System.out.println("2. 43 112, -1 357 674, 1 357 674, -1 357 674 000, 3 657 895 000");
+            System.out.println("3. 4.9876543, 7.123456789012345678890, 18 398 458 438 583 853.28, 18 398 458 438 583.39875937284928422");
+            operation = input.next().charAt(0);
+            switch (operation){
+                case '1':
+                    System.out.println(chislo11);
+                    System.out.println(chislo12);
+                    System.out.println(chislo13);
+                    System.out.println(chislo14);
+                    System.out.println(chislo15);
+                    break;
+                case '2':
+                    System.out.println(chislo21);
+                    System.out.println(chislo22);
+                    System.out.println(chislo23);
+                    System.out.println(chislo24);
+                    System.out.println(chislo25);
+                    break;
+                case '3':
+                    System.out.println(chislo31);
+                    System.out.println(chislo32);
+                    System.out.println(chislo33);
+                    System.out.println(chislo34);
+                    break;
+
+                default:
+                    System.out.println("Greshno deystvie!");
+                    break;
+            }
+            System.out.println("Natisnete 4. za izhod ot programata (EXIT) ili proizvolno chislo za da prodaljite!");
+            endTask = input.nextInt();
+            if(endTask==4) check=1;
+        }
+    }
+}
